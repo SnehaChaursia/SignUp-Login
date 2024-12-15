@@ -1,5 +1,7 @@
 Interactive Login and Signup System 🔐🔗
 
+<a href="">View Project</a>
+
 Overview
 
 This project is an Interactive Login and Signup System built using HTML, CSS, and JavaScript. It provides a seamless interface for users to register and log in, with user data stored locally using the browser's localStorage. This makes it an ideal project for beginners to learn about client-side web development and form handling.
@@ -52,48 +54,11 @@ Code Highlights 🌟
 
 Signup Button Logic:
 
-signupbtn.addEventListener('click', () => {
-  const Name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-  const confirmpassword = document.getElementById("Confirmpassword").value;
-
-  if (!Name || !email || !password || !confirmpassword) {
-    alert("Please fill all the fields");
-    return;
-  }
-  if (password !== confirmpassword) {
-    alert("Confirm password not match");
-    return;
-  }
-  if (localStorage.getItem(email)) {
-    alert("Already Registered");
-    login_page.click();
-    return;
-  }
-  localStorage.setItem(email, password);
-  login_page.click();
-});
+![Screenshot 2024-12-15 115816](https://github.com/user-attachments/assets/a77c606b-2fa8-49d4-bb6c-64b32b9a2437)
 
 Login Button Logic:
 
-loginbtn.addEventListener('click', () => {
-  const user = document.getElementById('mail').value;
-  const password = document.getElementById('passkey').value;
-
-  if (!user || !password) {
-    alert('Please fill details');
-    return;
-  }
-
-  let savedPassword = localStorage.getItem(user);
-  if (savedPassword === password) {
-    alert("Successfully login");
-  } else {
-    alert("Incorrect password, try again!");
-  }
-  localStorage.setItem("isloggedIn", user);
-});
+![Screenshot 2024-12-15 115850](https://github.com/user-attachments/assets/ca18f167-5683-4386-bedf-e9f39a001993)
 
 Styling Features 💄
 
@@ -103,29 +68,13 @@ Hover Effects: Buttons change size and color when hovered.
 
 Responsive Alignment: Flexbox ensures the interface is centered on the screen.
 
-Example CSS:
 
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #100202;
-  color: rgb(252, 19, 19);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
-
-#signupbtn:hover, #loginbtn:hover {
-  transform: scale(1.10);
-  background-color: rgb(252, 19, 19);
-  color: white;
-}
+![Screenshot 2024-12-15 115904](https://github.com/user-attachments/assets/0f63014a-aff8-4a7f-b6c3-53288ef6d047)
 
 How to Use 🔍
 
 Clone or download the project.
+URL:https://github.com/SnehaChaursia/SignUp-Login.git
 
 Open index.html in a browser.
 
