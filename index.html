@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <div class="sigup_page">
     <h1>Sign up</h1>
-    <h4>Already Registered<a id =login_page href="#">Log_in</a></h4>
+    <h4>Already Registered <a id =login_page href="#">Login</a></h4>
     <form>
        <label>Name</label><br>
        <input type ="text" id="name"><br>
@@ -21,11 +22,16 @@
     </form>
     <button id ="signupbtn">Sing up</button>
 </div>
-<div class="Login_page">
+<div class="Login_page" style="display: none;">
+    <h1>Login</h1>
+    <h4>New User <a id =signup_page href="#">Sign up</a></h4>
     <form>
-        <laebl>Username/Email</laebl><br>
-        <input text="email" text="text" id ="mail">
+        <label>Username/Email</label><br>
+        <input text="email" text="text" id ="mail"><br>
+        <label>Password</label><br>
+        <input type="password" id="passkey"><br>
     </form>
+    <button id="loginbtn">Login </button>
 </div>
 <script src="./script.js"></script>
 </body>
