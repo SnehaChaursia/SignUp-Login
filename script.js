@@ -42,7 +42,7 @@ loginbtn.addEventListener('click',()=>{
      if(savedPAssword===password){
         alert("Successfully login")
      } else{
-        alert("Icorrect password try again!")
+        alert("Incorrect password try again!")
      }
      localStorage.setItem("isloggedIn",user);
 })
