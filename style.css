@@ -4,8 +4,8 @@ body {
   justify-content: center; /* Horizontal center */
   align-items: center;    /* Vertical center */
   height: 100vh; 
-  background-color:#100202; 
-  color: rgb(252, 19, 19);  
+  background-color:#18acb4; 
+  color: white;  
   font-family: Arial, Helvetica, sans-serif;
   font-weight:lighter;
 }
@@ -19,7 +19,7 @@ color:black;
 font-weight: 700;
 width: 100px;
 height: 25px;
-color: rgb(252, 19, 19);
+color: #18acb4;
 
 }
 #loginbtn{
@@ -29,17 +29,17 @@ font-weight: 700;
 width: 100px;
 height: 25px;
 background-color: honeydew;
-color: rgb(252, 19, 19);
+color: #18acb4;
 
 }
 #loginbtn:hover{ 
  transform:Scale(1.10);
- background-color: rgb(252, 19, 19);
+ background-color: #18acb4;
  color: white;
 }
 #signupbtn:hover{ 
  transform:Scale(1.10);
- background-color: rgb(252, 19, 19);
+ background-color:#18acb4;
  color: white;
 }
 a{
@@ -51,4 +51,12 @@ label{
 }
 a:hover{
     color:rgb(238, 47, 47)
+}
+#login_page{
+   color:wheat; 
+   font-weight:bolder;
+}
+#signup_page{
+    color:wheat; 
+    font-weight:bolder;
 }
